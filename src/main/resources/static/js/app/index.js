@@ -17,7 +17,7 @@ var main = {
             url: '/api/v1/posts',
             dataType: 'json',
             contentType: 'application/json;charset=utf-8',
-            data: Json.stringify(data)
+            data: JSON.stringify(data)
         }).done(function(){
             alert('글이 등록되었습니다.');
             window.location.href = '/';

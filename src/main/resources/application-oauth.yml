@@ -1,0 +1,11 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-secret: !!binary |-
+              w63CgcK0w6vCncK8w6zCncK0w6zClsK4w63CisK4IMOrwrPCtMOswpXCiCDDq8K5woTDq8KwwoA=
+            client-id: !!binary |-
+              w63CgcK0w6vCncK8w6zCncK0w6zClsK4w63CisK4IElE
+            scope: profile,email

@@ -1,5 +1,7 @@
 package com.yerin.book.springbootwebservice.config.auth;
 
+import com.yerin.book.springbootwebservice.config.auth.dto.OAuthAttributes;
+import com.yerin.book.springbootwebservice.config.auth.dto.SessionUser;
 import com.yerin.book.springbootwebservice.domain.user.User;
 import com.yerin.book.springbootwebservice.domain.user.UserRepository;
 import jakarta.servlet.http.HttpSession;

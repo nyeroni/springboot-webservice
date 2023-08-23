@@ -1,4 +1,4 @@
-package com.yerin.book.springbootwebservice.config.auth;
+package com.yerin.book.springbootwebservice.config.auth.dto;
 
 import com.yerin.book.springbootwebservice.domain.user.Role;
 import com.yerin.book.springbootwebservice.domain.user.User;

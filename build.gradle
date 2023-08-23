@@ -24,12 +24,18 @@ dependencies {
     annotationProcessor('org.projectlombok:lombok')
     testImplementation('org.projectlombok:lombok')
     testAnnotationProcessor('org.projectlombok:lombok')
+
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    runtimeOnly 'com.h2database:h2'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.hamcrest:hamcrest:2.2'
+    implementation('com.h2database:h2')
+    implementation("org.mariadb.jdbc:mariadb-java-client")
+
+
     implementation('org.springframework.boot:spring-boot-starter-mustache')
     implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
+    implementation('org.springframework.session:spring-session-jdbc')
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+    testImplementation("org.springframework.security:spring-security-test") // 권한 관련
 
 
 }

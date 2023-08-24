@@ -1,4 +1,4 @@
-package com.yerin.book.springbootwebservice.domain.user;
+package com.yerin.book.springbootwebservice.domain.Member;
 
 import com.yerin.book.springbootwebservice.domain.BaseTimeEntity;
 import jakarta.persistence.*;
@@ -12,7 +12,7 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 @Getter
 @NoArgsConstructor
 @Entity
-public class User extends BaseTimeEntity {
+public class Member extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = IDENTITY)
@@ -32,7 +32,7 @@ public class User extends BaseTimeEntity {
     private Role role;
 
     @Builder
-    public User(String name, String email, String picture, Role role){
+    public Member(String name, String email, String picture, Role role){
         this.name = name;
         this.email = email;
         this.picture = picture;
@@ -40,7 +40,7 @@ public class User extends BaseTimeEntity {
 
     }
 
-    public User update(String name, String picture){
+    public Member update(String name, String picture){
         this.name = name;
         this.picture = picture;
 

@@ -1,6 +1,6 @@
 package com.yerin.book.springbootwebservice.config.auth.dto;
 
-import com.yerin.book.springbootwebservice.domain.user.User;
+import com.yerin.book.springbootwebservice.domain.Member.Member;
 import lombok.Getter;
 
 import java.io.Serializable;
@@ -12,10 +12,10 @@ public class SessionUser implements Serializable {
     private String email;
     private String picture;
 
-    public SessionUser(User user) {
+    public SessionUser(Member member) {
 
-        this.name = user.getName();
-        this.email = user.getEmail();
-        this.picture = user.getPicture();
+        this.name = member.getName();
+        this.email = member.getEmail();
+        this.picture = member.getPicture();
     }
 }

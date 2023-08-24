@@ -2,8 +2,8 @@ package com.yerin.book.springbootwebservice.config.auth;
 
 import com.yerin.book.springbootwebservice.config.auth.dto.OAuthAttributes;
 import com.yerin.book.springbootwebservice.config.auth.dto.SessionUser;
-import com.yerin.book.springbootwebservice.domain.user.User;
-import com.yerin.book.springbootwebservice.domain.user.UserRepository;
+import com.yerin.book.springbootwebservice.domain.Member.Member;
+import com.yerin.book.springbootwebservice.domain.Member.MemberRepository;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -22,7 +22,7 @@ import java.util.Collections;
 @Service
 public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequest, OAuth2User> {
 
-    private final UserRepository userRepository;
+    private final MemberRepository memberRepository;
     private final HttpSession httpSession;
 
     @Override
@@ -35,21 +35,21 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
         OAuthAttributes attriubutes = OAuthAttributes.of(registrationId, userNameAttributeName, oAuth2User.getAttributes());
 
 
-        User user = saveOrUpdate(attriubutes);
-        httpSession.setAttribute("user", new SessionUser(user));
+        Member member = saveOrUpdate(attriubutes);
+        httpSession.setAttribute("user", new SessionUser(member));
 
         return new DefaultOAuth2User(
                 Collections.singleton(new
-                        SimpleGrantedAuthority(user.getRoleKey())),
+                        SimpleGrantedAuthority(member.getRoleKey())),
                 attriubutes.getAttributes(),
                 attriubutes.getNameAttributeKey());
     }
 
-    private User saveOrUpdate(OAuthAttributes attributes){
-        User user = userRepository.findByEmail(attributes.getEmail())
+    private Member saveOrUpdate(OAuthAttributes attributes){
+        Member member = memberRepository.findByEmail(attributes.getEmail())
                 .map(entity -> entity.update(attributes.getName(), attributes.getPicture()))
                 .orElse(attributes.toEntity());
 
-        return userRepository.save(user);
+        return memberRepository.save(member);
     }
 }

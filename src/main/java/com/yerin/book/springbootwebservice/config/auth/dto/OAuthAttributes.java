@@ -1,7 +1,7 @@
 package com.yerin.book.springbootwebservice.config.auth.dto;
 
-import com.yerin.book.springbootwebservice.domain.user.Role;
-import com.yerin.book.springbootwebservice.domain.user.User;
+import com.yerin.book.springbootwebservice.domain.Member.Role;
+import com.yerin.book.springbootwebservice.domain.Member.Member;
 import lombok.Builder;
 import lombok.Getter;
 
@@ -39,8 +39,8 @@ public class OAuthAttributes {
                 .build();
     }
 
-    public User toEntity(){
-        return User.builder()
+    public Member toEntity(){
+        return Member.builder()
                 .name(name)
                 .email(email)
                 .picture(picture)

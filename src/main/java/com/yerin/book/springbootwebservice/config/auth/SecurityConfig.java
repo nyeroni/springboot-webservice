@@ -1,11 +1,10 @@
 package com.yerin.book.springbootwebservice.config.auth;
 
-import com.yerin.book.springbootwebservice.domain.user.Role;
+import com.yerin.book.springbootwebservice.domain.Member.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.web.SecurityFilterChain;
 
 @RequiredArgsConstructor

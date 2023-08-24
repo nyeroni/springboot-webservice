@@ -29,9 +29,13 @@ public class SecurityConfig {
                 .logout((logoutConfig) ->
                         logoutConfig.logoutSuccessUrl("/")
                 )
-                .oauth2Login()
-                .userInfoEndpoint()
-                .userService(customOAuth2UserService);
+                .oauth2Login(oauth2LoginConfigurer ->
+                        oauth2LoginConfigurer
+                                .userInfoEndpoint(userInfoEndpointConfigurer ->
+                                        userInfoEndpointConfigurer
+                                                .userService(customOAuth2UserService)
+                                )
+                );
         return http.build();
     }
 }

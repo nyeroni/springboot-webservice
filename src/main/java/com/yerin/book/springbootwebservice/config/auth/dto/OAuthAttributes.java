@@ -21,7 +21,7 @@ public class OAuthAttributes {
         this.attributes = attributes;
         this.name = name;
         this.email = email;
-        this.picture = email;
+        this.picture = picture;
     }
 
     public static OAuthAttributes of(String registrationId, String userNameAttributeName, Map<String, Object> attributes){

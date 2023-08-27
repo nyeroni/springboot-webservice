@@ -1,4 +1,4 @@
-package com.yerin.book.springbootwebservice.domain.Member;
+package com.yerin.book.springbootwebservice.domain.user;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

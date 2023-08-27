@@ -1,6 +1,6 @@
 package com.yerin.book.springbootwebservice.config.auth.dto;
 
-import com.yerin.book.springbootwebservice.domain.Member.Member;
+import com.yerin.book.springbootwebservice.domain.user.Member;
 import lombok.Getter;
 
 import java.io.Serializable;

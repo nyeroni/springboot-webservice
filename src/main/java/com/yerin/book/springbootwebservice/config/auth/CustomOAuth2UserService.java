@@ -2,8 +2,8 @@ package com.yerin.book.springbootwebservice.config.auth;
 
 import com.yerin.book.springbootwebservice.config.auth.dto.OAuthAttributes;
 import com.yerin.book.springbootwebservice.config.auth.dto.SessionUser;
-import com.yerin.book.springbootwebservice.domain.Member.Member;
-import com.yerin.book.springbootwebservice.domain.Member.MemberRepository;
+import com.yerin.book.springbootwebservice.domain.user.Member;
+import com.yerin.book.springbootwebservice.domain.user.MemberRepository;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

@@ -2,6 +2,7 @@ package com.yerin.book.springbootwebservice.service.posts;
 
 import com.yerin.book.springbootwebservice.domain.posts.Posts;
 import com.yerin.book.springbootwebservice.domain.posts.PostsRepository;
+import com.yerin.book.springbootwebservice.web.dto.PostsListResponseDto;
 import com.yerin.book.springbootwebservice.web.dto.PostsUpdateRequestDto;
 import com.yerin.book.springbootwebservice.web.dto.PostsResponseDto;
 import com.yerin.book.springbootwebservice.web.dto.PostsSaveRequestDto;
@@ -20,6 +21,7 @@ public class PostsService {
 
     @Transactional
     public Long save(PostsSaveRequestDto requestDto) {
+
         return postsRepository.save(requestDto.toEntity()).getId();
     }
 

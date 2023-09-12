@@ -1,4 +1,4 @@
-package com.yerin.book.springbootwebservice.service.posts;
+package com.yerin.book.springbootwebservice.web.dto;
 
 import com.yerin.book.springbootwebservice.domain.posts.Posts;
 import lombok.Getter;

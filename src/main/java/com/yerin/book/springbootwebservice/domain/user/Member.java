@@ -15,7 +15,7 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 public class Member extends BaseTimeEntity {
 
     @Id
-    @GeneratedValue(strategy = IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
@@ -39,14 +39,14 @@ public class Member extends BaseTimeEntity {
         this.role = role;
     }
 
-    public Member update(String name, String picture){
+    public Member update(String name, String picture) {
         this.name = name;
         this.picture = picture;
 
         return this;
     }
 
-    public String getRoleKey(){
+    public String getRoleKey() {
         return this.role.getKey();
     }
 }

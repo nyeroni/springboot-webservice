@@ -21,10 +21,11 @@ public class PostsRepositoryTest {
     @Autowired
     PostsRepository postsRepository;
 
-    @AfterEach //@After ???
-    public void cleanup(){
-        postsRepository.deleteAll();;
+    @AfterEach
+    public void cleanUp() {
+        postsRepository.deleteAll();
     }
+
 
     @Test
     public void 게시글저장_불러오기(){
@@ -60,12 +61,12 @@ public class PostsRepositoryTest {
         //when
         List<Posts>postsList = postsRepository.findAll();
 
-        //then
+        // then
         Posts posts = postsList.get(0);
+        System.out.println(">>>>>>>>>> createDate = " + posts.getCreatedDate() + ", modifiedDate = " + posts.getModifiedDate());
 
-        System.out.println(">>>>>>>>> createDate=" + posts.getCreateDate()+", modifiedDate="+posts.getModifiedDate());
-
-        assertThat(posts.getCreateDate()).isAfter(now);
+        assertThat(posts.getCreatedDate()).isAfter(now);
         assertThat(posts.getModifiedDate()).isAfter(now);
+
     }
 }

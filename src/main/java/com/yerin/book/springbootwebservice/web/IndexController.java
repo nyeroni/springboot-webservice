@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class IndexController {
 
     private final PostsService postsService;
-        //private final HttpSession httpSession;
+    //private final HttpSession httpSession;
 
     @GetMapping("/")
     public String index(Model model, @LoginUser SessionUser user) {
@@ -27,6 +27,7 @@ public class IndexController {
         }
         return "index";
     }
+
     @GetMapping("/posts/save")
     public String postsSave() {
         return "posts-save";

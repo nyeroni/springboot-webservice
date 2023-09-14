@@ -19,6 +19,7 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+
         http
                 .csrf((csrfConfig) ->
                         csrfConfig.disable()
@@ -50,6 +51,7 @@ public class SecurityConfig {
                                                 .userService(customOAuth2UserService)
                                 )
                 );
+
         return http.build();
 
     }

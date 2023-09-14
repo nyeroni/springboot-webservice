@@ -11,7 +11,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @EnableWebSecurity
-@EnableMethodSecurity
+//@EnableMethodSecurity
 @Configuration
 @RequiredArgsConstructor
 public class SecurityConfig {
@@ -31,7 +31,9 @@ public class SecurityConfig {
                 )
                 .authorizeHttpRequests(authorizeRequests ->
                         authorizeRequests
-                                .requestMatchers(AntPathRequestMatcher.antMatcher("/"), AntPathRequestMatcher.antMatcher("/css/**"),
+                                .requestMatchers(
+                                        AntPathRequestMatcher.antMatcher("/"),
+                                        AntPathRequestMatcher.antMatcher("/css/**"),
                                         AntPathRequestMatcher.antMatcher("/images/**"),
                                         AntPathRequestMatcher.antMatcher("/js/**"),
                                         AntPathRequestMatcher.antMatcher("/h2-console/**")).permitAll()

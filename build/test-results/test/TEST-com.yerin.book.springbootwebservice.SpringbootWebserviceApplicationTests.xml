@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.yerin.book.springbootwebservice.SpringbootWebserviceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-14T07:10:51" hostname="yelong-ui-MacBookAir.local" time="0.272">
+<testsuite name="com.yerin.book.springbootwebservice.SpringbootWebserviceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-15T16:49:33" hostname="yelong-ui-MacBookAir.local" time="0.002">
   <properties/>
-  <testcase name="contextLoads()" classname="com.yerin.book.springbootwebservice.SpringbootWebserviceApplicationTests" time="0.272"/>
-  <system-out><![CDATA[16:10:49.071 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.yerin.book.springbootwebservice.SpringbootWebserviceApplicationTests]: SpringbootWebserviceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:10:49.116 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.yerin.book.springbootwebservice.SpringbootWebserviceApplication for test class com.yerin.book.springbootwebservice.SpringbootWebserviceApplicationTests
+  <testcase name="contextLoads()" classname="com.yerin.book.springbootwebservice.SpringbootWebserviceApplicationTests" time="0.002"/>
+  <system-out><![CDATA[2023-09-16T01:49:33.515+09:00  INFO 98980 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.yerin.book.springbootwebservice.SpringbootWebserviceApplicationTests]: SpringbootWebserviceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-09-16T01:49:33.518+09:00  INFO 98980 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.yerin.book.springbootwebservice.SpringbootWebserviceApplication for test class com.yerin.book.springbootwebservice.SpringbootWebserviceApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,31 +13,28 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.2)
 
-2023-09-14T16:10:49.288+09:00  INFO 37773 --- [    Test worker] b.s.SpringbootWebserviceApplicationTests : Starting SpringbootWebserviceApplicationTests using Java 17.0.7 with PID 37773 (started by yerong in /Users/yerong/study/spring/springboot-webservice)
-2023-09-14T16:10:49.289+09:00  INFO 37773 --- [    Test worker] b.s.SpringbootWebserviceApplicationTests : The following 1 profile is active: "oauth"
-2023-09-14T16:10:49.569+09:00  INFO 37773 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-14T16:10:49.598+09:00  INFO 37773 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
-2023-09-14T16:10:49.769+09:00  INFO 37773 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-14T16:10:49.843+09:00  INFO 37773 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2023-09-14T16:10:49.844+09:00  INFO 37773 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-14T16:10:49.912+09:00  INFO 37773 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-14T16:10:49.958+09:00  INFO 37773 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-14T16:10:49.960+09:00  INFO 37773 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-14T16:10:50.010+09:00  INFO 37773 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-14T16:10:50.065+09:00  INFO 37773 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-14T16:10:50.165+09:00  INFO 37773 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-14T16:10:50.433+09:00  INFO 37773 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-16T01:49:33.531+09:00  INFO 98980 --- [    Test worker] b.s.SpringbootWebserviceApplicationTests : Starting SpringbootWebserviceApplicationTests using Java 17.0.7 with PID 98980 (started by yerong in /Users/yerong/study/spring/springboot-webservice)
+2023-09-16T01:49:33.531+09:00  INFO 98980 --- [    Test worker] b.s.SpringbootWebserviceApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-09-16T01:49:33.606+09:00  INFO 98980 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-16T01:49:33.612+09:00  INFO 98980 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2023-09-16T01:49:33.655+09:00  INFO 98980 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-09-16T01:49:33.657+09:00  INFO 98980 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:8b88c0d3-f61a-4131-a557-cbad40934681 user=SA
+2023-09-16T01:49:33.657+09:00  INFO 98980 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-09-16T01:49:33.668+09:00  INFO 98980 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-16T01:49:33.670+09:00  INFO 98980 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-16T01:49:33.670+09:00  INFO 98980 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-16T01:49:33.675+09:00  INFO 98980 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-16T01:49:33.691+09:00  INFO 98980 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 Hibernate: drop table if exists member cascade 
 Hibernate: drop table if exists posts cascade 
 Hibernate: create table member (created_date timestamp(6), id bigint generated by default as identity, modified_date timestamp(6), email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null check (role in ('GUEST','USER')), primary key (id))
 Hibernate: create table posts (created_date timestamp(6), id bigint generated by default as identity, modified_date timestamp(6), title varchar(500) not null, author varchar(255), content TEXT not null, primary key (id))
-2023-09-14T16:10:50.446+09:00  INFO 37773 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-14T16:10:50.582+09:00  INFO 37773 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-09-14T16:10:50.765+09:00  WARN 37773 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-14T16:10:50.828+09:00  INFO 37773 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@480d3c40, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f69b166, org.springframework.security.web.context.SecurityContextHolderFilter@37e15055, org.springframework.security.web.header.HeaderWriterFilter@f0deba2, org.springframework.security.web.authentication.logout.LogoutFilter@65374526, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@1b472cad, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@27aa0720, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7a59780b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4e7e7763, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39adf4e6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40cd02fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ecc4b43, org.springframework.security.web.access.ExceptionTranslationFilter@63e0c744, org.springframework.security.web.access.intercept.AuthorizationFilter@2df40273]
-2023-09-14T16:10:50.961+09:00  INFO 37773 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-09-14T16:10:51.019+09:00  INFO 37773 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2023-09-14T16:10:51.101+09:00  INFO 37773 --- [    Test worker] b.s.SpringbootWebserviceApplicationTests : Started SpringbootWebserviceApplicationTests in 1.92 seconds (process running for 2.418)
+2023-09-16T01:49:33.694+09:00  INFO 98980 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-16T01:49:33.742+09:00  WARN 98980 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-16T01:49:33.751+09:00  INFO 98980 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39ae0bff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@654e793f, org.springframework.security.web.context.SecurityContextHolderFilter@34e0d52e, org.springframework.security.web.header.HeaderWriterFilter@7451338e, org.springframework.security.web.authentication.logout.LogoutFilter@ceb4f91, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@3f7e72a7, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@69bf351e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5cdf6bb1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@29e9d47b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cf5db07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@216fe151, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39ee039d, org.springframework.security.web.access.ExceptionTranslationFilter@70d3b49c, org.springframework.security.web.access.intercept.AuthorizationFilter@75f5293c]
+2023-09-16T01:49:33.781+09:00  INFO 98980 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-09-16T01:49:33.797+09:00  INFO 98980 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:8b88c0d3-f61a-4131-a557-cbad40934681'
+2023-09-16T01:49:33.817+09:00  INFO 98980 --- [    Test worker] b.s.SpringbootWebserviceApplicationTests : Started SpringbootWebserviceApplicationTests in 0.295 seconds (process running for 3.506)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

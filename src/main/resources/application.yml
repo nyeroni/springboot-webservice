@@ -6,12 +6,10 @@ server:
 
 spring:
   jpa:
-    show-sql: true
+    show_sql: true
     properties:
       hibernate:
-        dialect:
-          org.hibernate.dialect.H2Dialect
-
+        dialect: org.hibernate.dialect.MySQL57Dialect
   session:
     store-type: jdbc
 
@@ -24,5 +22,5 @@ spring:
   jooq:
     sql-dialect: MySQL57Dialect
   datasource:
-    username: sa
-    url: jdbc:h2:mem:testdb;MODE=MYSQL
+    hikari:
+      jdbc-url: jdbc:h2:mem://localhost/~/testdb;MODE=MYSQL

@@ -1,17 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-09-23T08:02:14" hostname="yelong-ui-MacBookAir.local" time="0.128">
+<testsuite name="com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-09-23T12:31:24" hostname="yelong-ui-MacBookAir.local" time="0.402">
   <properties/>
-  <testcase name="게시글저장_불러오기()" classname="com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest" time="0.12"/>
-  <testcase name="BaseTimeEntity_등록()" classname="com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest" time="0.007"/>
-  <system-out><![CDATA[2023-09-23T17:02:14.659+09:00  INFO 8587 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest]: PostsRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-23T17:02:14.667+09:00  INFO 8587 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.yerin.book.springbootwebservice.SpringbootWebserviceApplication for test class com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest
+  <testcase name="게시글저장_불러오기()" classname="com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest" time="0.394"/>
+  <testcase name="BaseTimeEntity_등록()" classname="com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest" time="0.008"/>
+  <system-out><![CDATA[21:31:22.400 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest]: PostsRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:31:22.450 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.yerin.book.springbootwebservice.SpringbootWebserviceApplication for test class com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2023-09-23T21:31:22.636+09:00  INFO 93025 --- [    Test worker] c.y.b.s.d.posts.PostsRepositoryTest      : Starting PostsRepositoryTest using Java 17.0.7 with PID 93025 (started by yerong in /Users/yerong/study/spring/springboot-webservice)
+2023-09-23T21:31:22.637+09:00  INFO 93025 --- [    Test worker] c.y.b.s.d.posts.PostsRepositoryTest      : No active profile set, falling back to 1 default profile: "default"
+2023-09-23T21:31:22.957+09:00  INFO 93025 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-23T21:31:22.983+09:00  INFO 93025 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2023-09-23T21:31:23.179+09:00  INFO 93025 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-23T21:31:23.268+09:00  INFO 93025 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:8d50f62a-af2c-404b-a799-216ca3df1e5a user=SA
+2023-09-23T21:31:23.269+09:00  INFO 93025 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-23T21:31:23.340+09:00  INFO 93025 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-23T21:31:23.377+09:00  INFO 93025 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-09-23T21:31:23.379+09:00  INFO 93025 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-23T21:31:23.444+09:00  INFO 93025 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-23T21:31:23.511+09:00  INFO 93025 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-23T21:31:23.641+09:00  INFO 93025 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-23T21:31:23.927+09:00  INFO 93025 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: drop table if exists member cascade 
+Hibernate: drop table if exists posts cascade 
+Hibernate: create table member (created_date timestamp(6), id bigint generated by default as identity, modified_date timestamp(6), email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null check (role in ('GUEST','USER')), primary key (id))
+Hibernate: create table posts (created_date timestamp(6), id bigint generated by default as identity, modified_date timestamp(6), title varchar(500) not null, author varchar(255), content TEXT not null, primary key (id))
+2023-09-23T21:31:23.943+09:00  INFO 93025 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-23T21:31:24.097+09:00  INFO 93025 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-23T21:31:24.286+09:00  WARN 93025 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-23T21:31:24.363+09:00  INFO 93025 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@487f025, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ef570be, org.springframework.security.web.context.SecurityContextHolderFilter@12ef7db5, org.springframework.security.web.header.HeaderWriterFilter@6f4e39b3, org.springframework.security.web.authentication.logout.LogoutFilter@38816a6c, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@738b93a8, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1e8c9083, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7b8b755d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@39329d81, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a8cc099, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e572ad6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63574d76, org.springframework.security.web.access.ExceptionTranslationFilter@2bb03136, org.springframework.security.web.access.intercept.AuthorizationFilter@3e8c9981]
+2023-09-23T21:31:24.505+09:00  INFO 93025 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-09-23T21:31:24.578+09:00  INFO 93025 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:8d50f62a-af2c-404b-a799-216ca3df1e5a'
+2023-09-23T21:31:24.663+09:00  INFO 93025 --- [    Test worker] c.y.b.s.d.posts.PostsRepositoryTest      : Started PostsRepositoryTest in 2.144 seconds (process running for 2.726)
 Hibernate: insert into posts (author,content,created_date,modified_date,title,id) values (?,?,?,?,?,default)
 Hibernate: select p1_0.id,p1_0.author,p1_0.content,p1_0.created_date,p1_0.modified_date,p1_0.title from posts p1_0
 Hibernate: select p1_0.id,p1_0.author,p1_0.content,p1_0.created_date,p1_0.modified_date,p1_0.title from posts p1_0
 Hibernate: delete from posts where id=?
 Hibernate: insert into posts (author,content,created_date,modified_date,title,id) values (?,?,?,?,?,default)
 Hibernate: select p1_0.id,p1_0.author,p1_0.content,p1_0.created_date,p1_0.modified_date,p1_0.title from posts p1_0
->>>>>>>>>> createDate = 2023-09-23T17:02:14.791859, modifiedDate = 2023-09-23T17:02:14.791859
+>>>>>>>>>> createDate = 2023-09-23T21:31:25.067406, modifiedDate = 2023-09-23T21:31:25.067406
 Hibernate: select p1_0.id,p1_0.author,p1_0.content,p1_0.created_date,p1_0.modified_date,p1_0.title from posts p1_0
 Hibernate: delete from posts where id=?
 ]]></system-out>

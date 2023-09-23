@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-09-15T16:49:33" hostname="yelong-ui-MacBookAir.local" time="0.052">
+<testsuite name="com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-09-23T08:02:14" hostname="yelong-ui-MacBookAir.local" time="0.128">
   <properties/>
-  <testcase name="게시글저장_불러오기()" classname="com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest" time="0.045"/>
+  <testcase name="게시글저장_불러오기()" classname="com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest" time="0.12"/>
   <testcase name="BaseTimeEntity_등록()" classname="com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest" time="0.007"/>
-  <system-out><![CDATA[2023-09-16T01:49:33.824+09:00  INFO 98980 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest]: PostsRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-09-16T01:49:33.827+09:00  INFO 98980 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.yerin.book.springbootwebservice.SpringbootWebserviceApplication for test class com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest
+  <system-out><![CDATA[2023-09-23T17:02:14.659+09:00  INFO 8587 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest]: PostsRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-09-23T17:02:14.667+09:00  INFO 8587 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.yerin.book.springbootwebservice.SpringbootWebserviceApplication for test class com.yerin.book.springbootwebservice.domain.posts.PostsRepositoryTest
 Hibernate: insert into posts (author,content,created_date,modified_date,title,id) values (?,?,?,?,?,default)
 Hibernate: select p1_0.id,p1_0.author,p1_0.content,p1_0.created_date,p1_0.modified_date,p1_0.title from posts p1_0
 Hibernate: select p1_0.id,p1_0.author,p1_0.content,p1_0.created_date,p1_0.modified_date,p1_0.title from posts p1_0
 Hibernate: delete from posts where id=?
 Hibernate: insert into posts (author,content,created_date,modified_date,title,id) values (?,?,?,?,?,default)
 Hibernate: select p1_0.id,p1_0.author,p1_0.content,p1_0.created_date,p1_0.modified_date,p1_0.title from posts p1_0
->>>>>>>>>> createDate = 2023-09-16T01:49:33.875532, modifiedDate = 2023-09-16T01:49:33.875532
+>>>>>>>>>> createDate = 2023-09-23T17:02:14.791859, modifiedDate = 2023-09-23T17:02:14.791859
 Hibernate: select p1_0.id,p1_0.author,p1_0.content,p1_0.created_date,p1_0.modified_date,p1_0.title from posts p1_0
 Hibernate: delete from posts where id=?
 ]]></system-out>

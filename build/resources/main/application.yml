@@ -20,6 +20,7 @@ spring:
   h2:
     console:
       enabled: true # h2 웹 콘솔 활성화
+
   profiles:
     include: oauth
 
@@ -28,7 +29,7 @@ spring:
   datasource:
     hikari:
       username: sa
-      jdbc-url: jdbc:h2:mem:testdb;MODE=MYSQL
+      jdbc-url: jdbc:h2:mem://localhost/~/testdb;MODE=MYSQL
 
 
 

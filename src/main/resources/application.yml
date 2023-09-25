@@ -20,6 +20,7 @@ spring:
   h2:
     console:
       enabled: true # h2 웹 콘솔 활성화
+
   profiles:
     include: oauth
 

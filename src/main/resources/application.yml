@@ -29,7 +29,7 @@ spring:
   datasource:
     hikari:
       username: sa
-      jdbc-url: jdbc:h2:mem://localhost/~/testdb;MODE=MYSQL
+      jdbc-url: jdbc:h2:mem:testdb;MODE=MYSQL
 
 
 

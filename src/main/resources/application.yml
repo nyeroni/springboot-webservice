@@ -24,8 +24,7 @@ spring:
   profiles:
     include: oauth
 
-  jooq:
-    sql-dialect: MySQL57Dialect
+
   datasource:
     hikari:
       username: sa

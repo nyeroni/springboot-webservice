@@ -8,7 +8,7 @@ spring:
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
+        dialect: org.hibernate.dialect.MySQL47Dialect
         dialect.storage_engine: innodb
 
     show_sql: true

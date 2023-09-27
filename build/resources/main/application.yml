@@ -25,10 +25,10 @@ spring:
     include: oauth
 
 
-  datasource:
-    hikari:
-      username: sa
-      jdbc-url: jdbc:h2:mem:testdb;MODE=MYSQL
+#  datasource:
+#    hikari:
+#      username: sa
+#      jdbc-url: jdbc:h2:mem:testdb;MODE=MYSQL
 
 
 

@@ -4,6 +4,7 @@ import com.yerin.book.springbootwebservice.config.auth.dto.OAuthAttributes;
 import com.yerin.book.springbootwebservice.config.auth.dto.SessionUser;
 import com.yerin.book.springbootwebservice.domain.user.Member;
 import com.yerin.book.springbootwebservice.domain.user.MemberRepository;
+import com.yerin.book.springbootwebservice.domain.user.Role;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -50,6 +51,7 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
         Member member = userRepository.findByEmail(attributes.getEmail())
                 .map(entity -> entity.update(attributes.getName(), attributes.getPicture()))
                 .orElse(attributes.toEntity());
+        member.updateRoleKey(Role.USER);
         return userRepository.save(member);
     }
 }

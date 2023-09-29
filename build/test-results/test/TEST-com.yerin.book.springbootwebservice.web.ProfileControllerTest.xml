@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.yerin.book.springbootwebservice.web.ProfileControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-29T11:38:03" hostname="yelong-ui-MacBookAir.local" time="0.387">
+<testsuite name="com.yerin.book.springbootwebservice.web.ProfileControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-29T11:50:01" hostname="yelong-ui-MacBookAir.local" time="0.386">
   <properties/>
-  <testcase name="profile은_인증없이_호출된다()" classname="com.yerin.book.springbootwebservice.web.ProfileControllerTest" time="0.387"/>
-  <system-out><![CDATA[20:38:01.331 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.yerin.book.springbootwebservice.web.ProfileControllerTest]: ProfileControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-20:38:01.497 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.yerin.book.springbootwebservice.SpringbootWebserviceApplication for test class com.yerin.book.springbootwebservice.web.ProfileControllerTest
+  <testcase name="profile은_인증없이_호출된다()" classname="com.yerin.book.springbootwebservice.web.ProfileControllerTest" time="0.386"/>
+  <system-out><![CDATA[20:49:59.622 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.yerin.book.springbootwebservice.web.ProfileControllerTest]: ProfileControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:49:59.687 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.yerin.book.springbootwebservice.SpringbootWebserviceApplication for test class com.yerin.book.springbootwebservice.web.ProfileControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,41 +13,41 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.2)
 
-2023-09-29T20:38:01.719+09:00  INFO 56299 --- [    Test worker] c.y.b.s.web.ProfileControllerTest        : Starting ProfileControllerTest using Java 17.0.7 with PID 56299 (started by yerong in /Users/yerong/study/spring/springboot-webservice)
-2023-09-29T20:38:01.720+09:00  INFO 56299 --- [    Test worker] c.y.b.s.web.ProfileControllerTest        : No active profile set, falling back to 1 default profile: "default"
-2023-09-29T20:38:02.038+09:00  INFO 56299 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-29T20:38:02.065+09:00  INFO 56299 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
-2023-09-29T20:38:02.343+09:00  INFO 56299 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-09-29T20:38:02.349+09:00  INFO 56299 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-29T20:38:02.349+09:00  INFO 56299 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
-2023-09-29T20:38:02.401+09:00  INFO 56299 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-29T20:38:02.402+09:00  INFO 56299 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 669 ms
-2023-09-29T20:38:02.418+09:00  INFO 56299 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-29T20:38:02.508+09:00  INFO 56299 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem://localhost/~/testdb user=SA
-2023-09-29T20:38:02.509+09:00  INFO 56299 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-29T20:38:02.516+09:00  INFO 56299 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem://localhost/~/testdb'
-2023-09-29T20:38:02.613+09:00  INFO 56299 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-29T20:38:02.640+09:00  INFO 56299 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
-2023-09-29T20:38:02.641+09:00  INFO 56299 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-29T20:38:02.701+09:00  INFO 56299 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-29T20:38:02.763+09:00  INFO 56299 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-29T20:38:02.779+09:00  WARN 56299 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2023-09-29T20:38:02.871+09:00  INFO 56299 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-29T20:38:03.165+09:00  INFO 56299 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-29T20:49:59.875+09:00  INFO 61645 --- [    Test worker] c.y.b.s.web.ProfileControllerTest        : Starting ProfileControllerTest using Java 17.0.7 with PID 61645 (started by yerong in /Users/yerong/study/spring/springboot-webservice)
+2023-09-29T20:49:59.876+09:00  INFO 61645 --- [    Test worker] c.y.b.s.web.ProfileControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2023-09-29T20:50:00.177+09:00  INFO 61645 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-29T20:50:00.204+09:00  INFO 61645 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2023-09-29T20:50:00.472+09:00  INFO 61645 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-29T20:50:00.479+09:00  INFO 61645 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-29T20:50:00.479+09:00  INFO 61645 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-09-29T20:50:00.529+09:00  INFO 61645 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-29T20:50:00.530+09:00  INFO 61645 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 644 ms
+2023-09-29T20:50:00.544+09:00  INFO 61645 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-29T20:50:00.631+09:00  INFO 61645 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem://localhost/~/testdb user=SA
+2023-09-29T20:50:00.632+09:00  INFO 61645 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-29T20:50:00.638+09:00  INFO 61645 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem://localhost/~/testdb'
+2023-09-29T20:50:00.731+09:00  INFO 61645 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-29T20:50:00.764+09:00  INFO 61645 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-09-29T20:50:00.765+09:00  INFO 61645 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-29T20:50:00.826+09:00  INFO 61645 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-29T20:50:00.886+09:00  INFO 61645 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-29T20:50:00.901+09:00  WARN 61645 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-09-29T20:50:00.980+09:00  INFO 61645 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-29T20:50:01.265+09:00  INFO 61645 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 Hibernate: drop table if exists member
 Hibernate: drop table if exists posts
 Hibernate: create table member (created_date datetime(6), id bigint not null auto_increment, modified_date datetime(6), email varchar(255) not null, name varchar(255) not null, picture varchar(255), role enum ('GUEST','USER') not null, primary key (id)) engine=InnoDB
 Hibernate: create table posts (created_date datetime(6), id bigint not null auto_increment, modified_date datetime(6), title varchar(500) not null, author varchar(255), content TEXT not null, primary key (id)) engine=InnoDB
-2023-09-29T20:38:03.181+09:00  INFO 56299 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-29T20:38:03.372+09:00  INFO 56299 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-09-29T20:38:03.588+09:00  WARN 56299 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-29T20:38:03.654+09:00  INFO 56299 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3de507af, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@349504d5, org.springframework.security.web.context.SecurityContextHolderFilter@3f1dadeb, org.springframework.security.web.header.HeaderWriterFilter@51039ec9, org.springframework.security.web.authentication.logout.LogoutFilter@65bc50c9, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@7b80ac30, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@8d0253b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@236e6563, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@347770a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e81b406, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6019ce4b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@218e28d9, org.springframework.security.web.access.ExceptionTranslationFilter@267a0b6a, org.springframework.security.web.access.intercept.AuthorizationFilter@36ce48bc]
-2023-09-29T20:38:03.758+09:00  INFO 56299 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-09-29T20:38:03.908+09:00  INFO 56299 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61059 (http) with context path ''
-2023-09-29T20:38:03.913+09:00  INFO 56299 --- [    Test worker] c.y.b.s.web.ProfileControllerTest        : Started ProfileControllerTest in 2.338 seconds (process running for 2.971)
-2023-09-29T20:38:04.240+09:00  INFO 56299 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-29T20:38:04.240+09:00  INFO 56299 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-29T20:38:04.241+09:00  INFO 56299 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-09-29T20:50:01.279+09:00  INFO 61645 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-29T20:50:01.439+09:00  INFO 61645 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-29T20:50:01.616+09:00  WARN 61645 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-29T20:50:01.691+09:00  INFO 61645 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@695f382c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29fa465a, org.springframework.security.web.context.SecurityContextHolderFilter@19598b38, org.springframework.security.web.header.HeaderWriterFilter@36ce48bc, org.springframework.security.web.authentication.logout.LogoutFilter@45bde54d, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@158f0af4, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@7a174e4b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@220a7f95, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4b2ca159, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@233bfc46, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77c4aeb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d47b761, org.springframework.security.web.access.ExceptionTranslationFilter@9be2897, org.springframework.security.web.access.intercept.AuthorizationFilter@724a80d2]
+2023-09-29T20:50:01.795+09:00  INFO 61645 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-09-29T20:50:01.937+09:00  INFO 61645 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61108 (http) with context path ''
+2023-09-29T20:50:01.944+09:00  INFO 61645 --- [    Test worker] c.y.b.s.web.ProfileControllerTest        : Started ProfileControllerTest in 2.196 seconds (process running for 2.688)
+2023-09-29T20:50:02.269+09:00  INFO 61645 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-29T20:50:02.269+09:00  INFO 61645 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-29T20:50:02.270+09:00  INFO 61645 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
